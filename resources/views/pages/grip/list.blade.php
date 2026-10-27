@@ -28,6 +28,7 @@
                             <i class="fa fa-file-excel"></i>
                         </button>
                     @endif
+
                     <x-form.modal label="New Grip" title="Form Grip" action="{{ route('grip.list.store') }}"
                         :hasFile="true">
                         <x-form.select-search label="Model" name="model_id" id="modelSelect" :required="true"
